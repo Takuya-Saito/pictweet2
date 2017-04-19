@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
   def show
+    binding.pry
     @nickname = current_user.nickname
     # @nickname = User.find(current_user.id).nickname
     # @nickname = User.find_by(id: current_user.id).nickname
