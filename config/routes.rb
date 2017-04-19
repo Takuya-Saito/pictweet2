@@ -7,5 +7,6 @@ Rails.application.routes.draw do
   delete  'tweets/:id'  => 'tweets#destroy'
   get   'tweets/:id/edit'  =>  'tweets#edit',  as: :edit_tweet
   patch  'tweets/:id'  =>  'tweets#update',  as: :tweet
+  get   'tweets/:id'  =>  'tweets#show'
   get   'users/:id'   =>  'users#show',    as: :user   #ユーザー詳細画面
 end
